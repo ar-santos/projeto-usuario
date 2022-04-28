@@ -13,15 +13,46 @@ body {
     position: relative;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
+    padding-top: 25%;
 }
 
-.input_search {
-    width: 40%;
-    height: 30px;
-    border: none;
-    border-radius: 5%;
+.title{
+    position: relative;
+    bottom: 40px;
+}
+
+.input-search {
+   width: 40%;
+   height: 40px;
+   border-radius: 6px;
+   border: none;
+   outline: none;
+   font-size: 20px;
+}
+
+.button-pesquisa {
+    position: relative;
+    text-align: center;
+    top: 5px;
+    right: 50px;
 }
 
 .button {
     align-content: center;
+}
+
+.button-search {
+    position: relative;
+    top: 40px;
+    align-content: center;
+    background: rgba(0,0,0,0.89);
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    right: 10px;
+    cursor: pointer
 }
