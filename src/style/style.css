@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(128, 128, 128, 0.438);
+    background: linear-gradient(90deg, #FFFBF4,#CBFDF7 40%);
 }
 
 .container{
@@ -35,7 +35,8 @@ body {
 
 .title{
     position: relative;
-   gap: 40px;
+    gap: 40px;
+    color: #ABA3AF;
 }
 
 .input-search {
@@ -58,7 +59,7 @@ body {
 
 .button-search {
     align-content: center;
-    background: rgba(128, 128, 128, 0.699);
+    background: #ABA3AF;
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
@@ -71,6 +72,5 @@ body {
 }
 .button button:hover{
     background: transparent;
-    color: black;
-    border: 1px solid black;
+    color: #ABA3AF;
 }
