@@ -6,12 +6,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(90deg, #FFFBF4,#CBFDF7 40%);
+    background: linear-gradient(90deg, #F3F3F3,#B29DDB 50%);
 }
 
 .container{
     height: 80vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     align-content: center;
     align-items: center;
@@ -27,16 +27,21 @@ body {
     margin: 0 auto;
     height: 80%;
     width: 70%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     justify-content: center;
     align-content: center;
-    align-items: center;
 }
 
 .title{
     position: relative;
     gap: 40px;
-    color: #ABA3AF;
+    color: #1C2030;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-input{
+    text-align: center;
 }
 
 .input-search {
@@ -50,27 +55,32 @@ body {
 
 .button-pesquisa {
     position: relative;
-    text-align: center;
+    /* float:right; */
+    right: 40px;
+    top: 4px;
 }
 
 .button {
     align-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .button-search {
     align-content: center;
-    background: #ABA3AF;
+    background: #1C2030;
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
     padding: 5px;
     border: none;
     outline: none;
+    text-align: center;
     border-radius: 5px;
     cursor: pointer;
     transition:1s;
 }
 .button button:hover{
     background: transparent;
-    color: #ABA3AF;
+    color: #1C2030;
 }
