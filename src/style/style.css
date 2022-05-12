@@ -97,3 +97,67 @@ body {
     background: transparent;
     color: #6b7280;
 }
+
+.container-card{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    background: linear-gradient(100deg,#374151,#FFF 140%);
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px 1px #000;
+    align-content: center;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.name-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+.image-container img{
+    display: flex;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+    margin-top: 10%;
+}
+
+.h1-profiss{
+    text-align: center;
+    margin-top: 10px;
+}
+
+button{
+    position: relative;
+    background: #374151;
+    color: #6b7280;
+    border: none;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -5px -5px;
+    cursor: pointer;
+    margin-top: 20px;
+    left: 2%;
+}
+
+.sobre-card{
+    margin: 10px;
+}
+.sobre{
+    margin-bottom:20px;
+}
