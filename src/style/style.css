@@ -106,7 +106,7 @@ body {
     border-radius: 6px;
     box-shadow: 0px 1px 10px 1px #000;
     align-content: center;
-    top: 88%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -160,4 +160,20 @@ button{
 }
 .sobre{
     margin-bottom:20px;
+}
+
+.close{
+    position: relative;
+    top: 8%;
+}
+
+.linha{
+    width: 100%;
+    border-bottom: 2px solid #000000;
+}
+
+.less{
+    position: relative;
+    left: 95%;
+    cursor: pointer;
 }
