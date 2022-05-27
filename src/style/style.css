@@ -109,6 +109,14 @@ body {
     top: 95%;
     left: 50%;
     transform: translate(-50%,-50%);
+    display: none;
+    animation: go-back 1s;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(50px);
+    }
 }
 
 .name-user{
