@@ -1,4 +1,5 @@
 import modulePesquisar from "./main.js"
+import dados from "../data/index.js"
 let mostrarEoculta = document.getElementById("less")
 let textoDoInput = document.getElementById("id-pesquisa")
 
@@ -17,5 +18,17 @@ function pegarValue() {
     console.log(textoDoInput.value)
 }
 
-pesquisa(btnSearch,pegarValue)
+const result = dados.find(pegarValue)
 
+
+
+// const {dadosUsuarios, usuario} = dados
+
+// const procurarUsuario = (pesquisa) => {
+//     for (let usuario of pesquisa){for (let usuario of lista){
+//         console.log('O nome do usuario e ' + usuario.name)
+//     }
+// }
+// const pesquisar = procurarUsuario(dadosUsuarios,usuario)
+
+pesquisa(btnSearch,result)
