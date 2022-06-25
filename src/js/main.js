@@ -1,12 +1,21 @@
-let btnSearch = document.getElementById("id-search")
 
-function pesquisa(btn, funcMostrar) {
-    btn.addEventListener("click", funcMostrar, false )
-}
-    
+let btn = document.getElementById("id-search") 
+let textoDoInput = document.getElementById("id-pesquisa")
+import pegarUsuario from './usuario.js'
 
-const btn = { 
-    btnSearch,
-    pesquisa
+function pegarValue() {    
+    pegarUsuario()
+    textoDoInput.value =''    
 }
-export default btn
+
+btn.addEventListener('click', pegarValue, false)
+
+// function mostrar() {
+//     if (mostrarEoculta.style.display == 'block'){
+//         mostrarEoculta.style.display = 'none';
+// }else { 
+//     mostrarEoculta.style.display = 'block' 
+// }
+// }
+
+

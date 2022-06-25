@@ -257,6 +257,6 @@ const usuario =  {
   }
 }
 
-const dados = {dadosUsuarios,usuario} 
 
-export default dados
+
+export default dadosUsuarios

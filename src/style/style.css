@@ -109,7 +109,7 @@ body {
     top: 95%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: none;
+    display: block;
     animation: go-back 1s;
 }
 
@@ -180,6 +180,7 @@ button{
     border-bottom: 2px solid #000000;
 }
 
+/* class para exibir carde forma antiga */
 .less{
     position: relative;
     left: 95%;
