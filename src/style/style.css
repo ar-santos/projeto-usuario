@@ -109,7 +109,7 @@ body {
     top: 95%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: block;
+    display: none;
     animation: go-back 1s;
 }
 
@@ -181,8 +181,9 @@ button{
 }
 
 /* class para exibir carde forma antiga */
-.less{
+#ocultarCard{
     position: relative;
     left: 95%;
     cursor: pointer;
+    display: none;
 }
