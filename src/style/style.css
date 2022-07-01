@@ -38,6 +38,8 @@ body {
     color: #6b7280;
     text-align: center;
     padding: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .container-input{
@@ -45,15 +47,17 @@ body {
 }
 
 .input-search {
-   width: 80%;
-   height: 40px;
+   width: 100%;
+   height:30px;
    color: #FFF;
    border-radius: 1rem;
    border: none;
    outline: none;
    font-size: 20px;
    background: none;
+   position: relative;
    box-shadow: 0px 1px 10px 1px #000;
+   white-space: nowrap;
 }
 
 .material-symbols-outlined.md-36 {
@@ -61,12 +65,11 @@ body {
 }
 
 .button-pesquisa {
-    position: relative;
-    /* float:right; */
-    right: 40px;
-    top: 4px;
+    position: absolute;
+    float:right;
     color: #EC4899;
     border-radius: 7px;
+    left: 80%;
     cursor: pointer;
 }
 
@@ -92,6 +95,9 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition:1s;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .button button:hover{
     background: transparent;
@@ -155,7 +161,6 @@ button{
     padding: 8px 40px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: -5px -5px;
     cursor: pointer;
