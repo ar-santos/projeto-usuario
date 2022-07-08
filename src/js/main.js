@@ -8,7 +8,7 @@ import ocultarCard from './exibirEsconderCard.js'
 function pegarValue() {    
     pegarUsuario()
     textoDoInput.value =''  
-    ocultarCard()  
+    // ocultarCard()  
 }
 
 btn.addEventListener('click', pegarValue, false)
@@ -19,6 +19,7 @@ function cardClose() {
 }
 
 closeCard.addEventListener('click', cardClose, false)
+
 // function mostrar() {
 //     if (mostrarEoculta.style.display == 'block'){
 //         mostrarEoculta.style.display = 'none';
