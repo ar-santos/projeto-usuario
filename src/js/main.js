@@ -1,21 +1,22 @@
-let btn = document.getElementById("id-search") 
+let btn = document.getElementById("id-search") // Trocar variavel btn por pesquisarBtn
 let closeCard = document.getElementById("ocultarCard") 
-let button = document.getElementById("primeiro-button")
+let button = document.getElementById("primeiro-button") // Trocar nome do icone lupa para pesquisaUsuarioIcon 
 let textoDoInput = document.getElementById("id-pesquisa")
 import pegarUsuario from './usuario.js'
 import ocultarCard from './exibirEsconderCard.js'
 
-function pegarValue() {    
+function pesquisarUsuario() {    
     pegarUsuario()
     textoDoInput.value =''  
     // ocultarCard()  
 }
 
-btn.addEventListener('click', pegarValue, false)
-button.addEventListener('click', pegarValue, false)
+btn.addEventListener('click', pesquisarUsuario, false)
+button.addEventListener('click', pesquisarUsuario, false)
 
 function cardClose() {
     ocultarCard()
+    
 }
 
 closeCard.addEventListener('click', cardClose, false)

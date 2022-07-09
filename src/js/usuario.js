@@ -8,10 +8,7 @@ function pegarUsuario() {
    for (let usuario of dados) {
         if(usuario.id == valorPesquisado){
             console.log(usuario)      
-            function exibirCard() {     
-                ocultarCard()  
-            }
-            btn.addEventListener('click', exibirCard)  
+            ocultarCard()              
         }
     }
     
