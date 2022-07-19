@@ -113,13 +113,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .container-card{
     width: 400px;
-    height: 600px;
+    height: 400px;
     position: absolute;
     background: linear-gradient(100deg,#374151,#FFF 140%);
     border-radius: 6px;
     box-shadow: 0px 1px 10px 1px #000;
     align-content: center;
-    top: 95%;
+    top: 79%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
@@ -179,9 +179,20 @@ button{
     margin: 10px;
 }
 .sobre{
-    margin-bottom:20px;
+    margin-top: 40px;
+    text-align: center;
+    color: #374151;
+    border-radius: 5%;
 }
-
+.inform {
+    text-align: center;
+    position: relative;
+    background: linear-gradient(100deg,#374151,#FFF 140%);
+    border-radius: 8px;
+    color:  #374151;
+    margin-top: 50px;
+    font-family: 'Press Start 2P, cursive';
+}
 .close{
     position: relative;
     top: 8%;
@@ -190,6 +201,8 @@ button{
 .linha{
     width: 100%;
     border-bottom: 2px solid #000000;
+    position: absolute;
+    top: -150%;
 }
 
 /* class para exibir carde forma antiga */
@@ -197,5 +210,6 @@ button{
     position: relative;
     cursor: pointer;
     display: none;
+    top: -125%;
     float:right;
 }
