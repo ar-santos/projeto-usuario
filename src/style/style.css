@@ -175,6 +175,36 @@ button{
     left: 2%;
 }
 
+.address:focus {
+    background: #6b7280;
+    color: #fff;
+}
+.sobre-button:focus {
+   background: #6b7280;
+   color: #fff;
+}
+
+.company:focus {
+    color: #fff;
+    background: #6b7280;
+}
+
+.inform-sobre {
+    display: none;
+}
+
+.sobre-button:focus + .inform-sobre {
+    display: block;
+}
+
+.address:focus + .inform-sobre {
+    display: block;
+}
+
+.company:focus + .inform-sobre {
+    display: block;
+}
+
 .sobre-card{
     margin: 10px;
 }
