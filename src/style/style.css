@@ -172,7 +172,13 @@ button{
     margin: -5px -5px;
     cursor: pointer;
     margin-top: 20px;
-    left: 2%;
+}
+
+.seção-inform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
 }
 
 .address:focus {
@@ -192,21 +198,27 @@ button{
 .inform-sobre {
     display: none;
 }
+.inform-address {
+    display: none;
+}
+.inform-company {
+    display: none;
+}
 
 .sobre-button:focus + .inform-sobre {
     display: block;
 }
 
-.address:focus + .inform-sobre {
+.address:focus + .inform-address {
     display: block;
 }
 
-.company:focus + .inform-sobre {
+.company:focus + .inform-company {
     display: block;
 }
 
-.sobre-card{
-    margin: 10px;
+.address-card{
+    margin: 8px;
 }
 .sobre{
     margin-top: 40px;
@@ -214,15 +226,54 @@ button{
     color: #374151;
     border-radius: 5%;
 }
-.inform {
+.inform-address {
+    width: 90%;
     text-align: center;
     position: relative;
-    background: linear-gradient(100deg,#374151,#FFF 140%);
+    background: rgba(255, 255, 255, 0.274);
     border-radius: 8px;
     color:  #374151;
-    margin-top: 50px;
+    position: fixed;
     font-family: 'Press Start 2P, cursive';
+    margin-top: 40px;
+    margin-left: 10px;
+    animation: go-back 1s;
 }
+
+
+.inform-sobre {
+    width: 90%;
+    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.274);
+    border-radius: 8px;
+    color:  #374151;
+    position: fixed;
+    font-family: 'Press Start 2P, cursive';
+    margin-top: 35px;
+    margin-left: -123px;
+    animation: go-back 1s;
+}
+.inform-company {
+    width: 90%;
+    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.274);
+    border-radius: 8px;
+    color:  #374151;
+    position: fixed;
+    font-family: 'Press Start 2P, cursive';
+    margin-top: 50px;
+    margin-left: -235px;
+    animation: go-back 1s;
+}
+
+/* @keyframes go-back {
+    from {
+        transform: translateX(-20px);
+    }
+} */
+
 .close{
     position: relative;
     top: 8%;

@@ -1,5 +1,6 @@
 let btn = document.getElementById("id-search") // Trocar variavel btn por pesquisarBtn
 let closeCard = document.getElementById("ocultarCard") 
+let card = document.getElementById("id-card") 
 let button = document.getElementById("primeiro-button") // Trocar nome do icone lupa para pesquisaUsuarioIcon 
 let textoDoInput = document.getElementById("id-pesquisa")
 import pegarUsuario from './usuario.js'
@@ -20,6 +21,19 @@ function cardClose() {
 }
 
 closeCard.addEventListener('click', cardClose, false)
+
+function FecharCard() {
+    if (closeCard.style.display == 'none') {
+        card.style.display = 'block' 
+        closeCard.style.display = 'block';
+    } else {  
+        card.style.display = 'none' 
+        closeCard.style.display = 'none' 
+    } 
+ }
+
+closeCard.addEventListener('click', FecharCard)
+
 
 // function mostrar() {
 //     if (mostrarEoculta.style.display == 'block'){
