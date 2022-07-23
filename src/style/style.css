@@ -290,7 +290,7 @@ button{
 #ocultarCard{
     position: relative;
     cursor: pointer;
-    display: none;
+    display: block;
     top: -125%;
     float:right;
 }

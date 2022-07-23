@@ -2,28 +2,22 @@ let card = document.getElementById("id-card")
 let closeIcon = document.getElementById("ocultarCard") 
 
 function ocultarCard() {
-   if (closeIcon.style.display == 'none') {
-      card.style.display = 'none';
-      closeIcon.style.display = 'none';
+   if (card.style.display == 'none') {
+      card.style.display = 'block';
+      closeIcon.style.display = 'block';
    } else { 
-   card.style.display = 'block' 
-   closeIcon.style.display = 'block' 
+   card.style.display = 'none' 
+   closeIcon.style.display = 'none' 
    } 
 }
 
-export default ocultarCard 
+function exibirCard() {
 
-// let card = document.getElementById("id-card") 
-// let closeIcon = document.getElementById("ocultarCard") 
+}
 
-// function ocultarCard() {
-//    if (card.style.display == 'block') {
-//       card.style.display = 'none';
-//       closeIcon.style.display = 'none';
-//    } else { 
-//    card.style.display = 'block' 
-//    closeIcon.style.display = 'block' 
-//    } 
-// }
+const utils=  {
+   ocultarCard,
+   exibirCard,
+}
 
-// export default ocultarCard 
+export default utils 
