@@ -1,21 +1,27 @@
 let card = document.getElementById("id-card") 
 let closeIcon = document.getElementById("ocultarCard") 
 
-function ocultarCard() {
-   if (card.style.display == 'none') {
+function exibirCard() {
+   if (card.style.display == 'block') {
       card.style.display = 'block';
       closeIcon.style.display = 'block';
    } else { 
-   card.style.display = 'none' 
-   closeIcon.style.display = 'none' 
+   card.style.display = 'block' 
+   closeIcon.style.display = 'block' 
    } 
 }
 
-function exibirCard() {
-
+function ocultarCard() {
+   if (card.style.display == 'block') {
+      card.style.display = 'none';
+      closeIcon.style.display = 'none';
+   } else { 
+   card.style.display = 'none' 
+   closeIcon.style.display = 'none' 
+   }
 }
 
-const utils=  {
+const utils =  {
    ocultarCard,
    exibirCard,
 }

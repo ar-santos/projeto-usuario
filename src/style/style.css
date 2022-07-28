@@ -287,10 +287,10 @@ button{
 }
 
 /* class para exibir carde forma antiga */
-#ocultarCard{
+.ocultarCard{
     position: relative;
     cursor: pointer;
-    display: block;
+    display: none;
     top: -125%;
     float:right;
 }

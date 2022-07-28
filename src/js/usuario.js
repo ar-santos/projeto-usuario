@@ -7,9 +7,8 @@ function pegarUsuario() {
    for (let usuario of dados) {
         if(usuario.id == valorPesquisado){
             console.log(usuario)      
-            utils.ocultarCard()             
+            utils.exibirCard()             
         }
-    }
-    
+    }    
 }
 export default pegarUsuario
