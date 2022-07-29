@@ -37,6 +37,7 @@ body {
     gap: 40px;
     color: #6b7280;
     text-align: center;
+    bottom: 110%;
     padding: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -49,6 +50,7 @@ body {
 .input-search {
    width: 100%;
    height:30px;
+   bottom: 110%;
    color: #FFF;
    border-radius: 10px;
    border: none;
@@ -76,7 +78,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     float:right;
     color: #EC4899;
     margin-right: 10px;
-    bottom: 50%;
+    bottom: 160%;
     cursor: pointer;
 }
 
@@ -102,6 +104,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border-radius: 20px;
     cursor: pointer;
     transition:1s;
+    bottom: 110%;
     display:inline-flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +122,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border-radius: 6px;
     box-shadow: 0px 1px 10px 1px #000;
     align-content: center;
-    top: 79%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
@@ -283,7 +286,7 @@ button{
     width: 100%;
     border-bottom: 2px solid #000000;
     position: absolute;
-    top: -150%;
+    top: -260%;
 }
 
 /* class para exibir carde forma antiga */
@@ -291,6 +294,6 @@ button{
     position: relative;
     cursor: pointer;
     display: none;
-    top: -125%;
+    top: -220%;
     float:right;
 }
