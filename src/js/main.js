@@ -3,8 +3,11 @@ let button = document.getElementById("primeiro-button") // Trocar nome do icone 
 let textoDoInput = document.getElementById("id-pesquisa")
 import pegarUsuario from './usuario.js'
 import utils from './exibirEsconderCard.js'
+import Debug from './pegarDados.js'
 let card = document.getElementById("id-card") 
 let closeIcon = document.getElementById("ocultarCard") 
+
+Debug()
 
 function pesquisarUsuario() { 
     pegarUsuario()
