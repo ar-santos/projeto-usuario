@@ -279,14 +279,13 @@ button{
 
 .close{
     position: relative;
-    top: 8%;
 }
 
 .linha{
     width: 100%;
     border-bottom: 2px solid #000000;
-    position: absolute;
-    top: -260%;
+    position: relative;
+    cursor: pointer;
 }
 
 /* class para exibir carde forma antiga */
@@ -294,6 +293,6 @@ button{
     position: relative;
     cursor: pointer;
     display: none;
-    top: -220%;
+    bottom: -60%;
     float:right;
 }
