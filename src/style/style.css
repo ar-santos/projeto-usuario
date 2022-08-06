@@ -292,7 +292,6 @@ button{
 .ocultarCard{
     position: relative;
     cursor: pointer;
-    display: none;
     bottom: -60%;
     float:right;
 }

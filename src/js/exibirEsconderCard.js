@@ -12,7 +12,7 @@ function exibirCard() {
 }
 
 function ocultarCard() {
-   if (card.style.display == 'block') {
+   if (card.style.display == 'none') {
       card.style.display = 'none';
       closeIcon.style.display = 'none';
    } else { 
