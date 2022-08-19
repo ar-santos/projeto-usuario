@@ -231,11 +231,10 @@ button{
 }
 .inform-address {
     width: 90%;
-    text-align: center;
     position: relative;
-    background: rgba(255, 255, 255, 0.274);
+    /* background: rgba(255, 255, 255, 0.274); */
     border-radius: 8px;
-    color:  #374151;
+    color:  rgba(0, 0, 0, 0.589);
     position: fixed;
     font-family: 'Press Start 2P, cursive';
     margin-top: 40px;
@@ -246,11 +245,10 @@ button{
 
 .inform-sobre {
     width: 90%;
-    text-align: center;
     position: relative;
-    background: rgba(255, 255, 255, 0.274);
+    /* background: rgba(255, 255, 255, 0.274); */
     border-radius: 8px;
-    color:  #374151;
+    color:  rgba(0, 0, 0, 0.589);
     position: fixed;
     font-family: 'Press Start 2P, cursive';
     margin-top: 35px;
@@ -259,11 +257,10 @@ button{
 }
 .inform-company {
     width: 90%;
-    text-align: center;
     position: relative;
-    background: rgba(255, 255, 255, 0.274);
+    /* background: rgba(255, 255, 255, 0.274); */
     border-radius: 8px;
-    color:  #374151;
+    color:  rgba(0, 0, 0, 0.589);
     position: fixed;
     font-family: 'Press Start 2P, cursive';
     margin-top: 50px;

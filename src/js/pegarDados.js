@@ -1,6 +1,7 @@
 let addressCard = document.getElementById("address-id")
 let sobreCard = document.getElementById("sobre-id")
 let companyCard = document.getElementById("company-id")
+let nameCard = document.getElementById("name-usuario")
 import dados from '../data/index.js'
 // import utils from './exibirEsconderCard.js'
 
@@ -11,6 +12,7 @@ function pegarDados() {
             sobreDataCard(usuario, sobreCard)        
             companyDataCard(usuario, companyCard)        
             addressDataCard(usuario, addressCard)        
+            nameDataCard(usuario, nameCard)        
         }
     }   
 }
@@ -86,6 +88,13 @@ function addressDataCard(data, card) {
     card.appendChild(lng)
 }
 
+function nameDataCard(data, card) {
+    const name = criarElemento()
+
+    name.textContent = data.name
+
+    card.appendChild(name)
+}
 
 {/* 
     <div class="inform-sobre" id="sobre-id"> 
