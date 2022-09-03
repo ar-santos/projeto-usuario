@@ -22,6 +22,17 @@ function criarElemento() {
    return newElement
 }
 
+function apagarElementoFilho(elemento){
+   let qntFilho = elemento.childElementCount
+   let tipoFilho = elemento.children
+
+   console.log(tipoFilho)
+
+    if (qntFilho > 0){
+        elemento.removeChild(tipoFilho[0])
+    }
+}
+
 
 function sobreDataCard(data, card) {
     const id = criarElemento()
@@ -30,6 +41,8 @@ function sobreDataCard(data, card) {
     const email = criarElemento()
     const phone = criarElemento()
     const website = criarElemento()
+
+    apagarElementoFilho(sobreCard)
 
     id.textContent = `Id: ${data.id}`
     nome.textContent = `Name: ${data.name}`
@@ -90,21 +103,15 @@ function addressDataCard(data, card) {
 
 function nameDataCard(data, card) {
     const name = criarElemento()
+    apagarElementoFilho(nameCard)
 
     name.textContent = data.name
-
     card.appendChild(name)
+    
 }
 
-{/* 
-    <div class="inform-sobre" id="sobre-id"> 
-    <h4>Id: 1</h4>
-    <h4>Name: Leanne Graham</h4>
-    <h4>Username: Bret</h4>
-    <h4>Email: Sincere@april.biz</h4>
-    <h4>Phone: 1-770-736-8031 x56442</h4>
-    <h4>Website: "hildegard.org"</h4>
-    </div> 
-*/}
+
+
+
 
 export default pegarDados

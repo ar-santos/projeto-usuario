@@ -8,7 +8,6 @@ let card = document.getElementById("id-card")
 let closeIcon = document.getElementById("ocultarCard") 
 
 
-
 function pesquisarUsuario() { 
     pegarUsuario()
     pegarDados()
@@ -23,5 +22,9 @@ function apagarCard() {
 }
 
 closeIcon.addEventListener('click', apagarCard, false)
-// card.style.display = 'none' 
-// closeIcon.style.display = 'none' 
+
+
+
+
+
+
