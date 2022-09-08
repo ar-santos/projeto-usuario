@@ -17,6 +17,10 @@ function pesquisarUsuario() {
 btn.addEventListener('click', pesquisarUsuario, false)
 button.addEventListener('click', pesquisarUsuario, false)
 
+textoDoInput.addEventListener('keyup', (e)=> {
+    (e.key === 'Enter' ? pesquisarUsuario(): null) 
+})
+
 function apagarCard() {
     utils.ocultarCard()
 }

@@ -33,6 +33,12 @@ function apagarElementoFilho(elemento){
     }
 }
 
+function apagarElementos(elemento){
+
+    while (elemento.firstChild) {
+        elemento.removeChild(elemento.firstChild)
+    }
+}
 
 function sobreDataCard(data, card) {
     const id = criarElemento()
@@ -42,7 +48,7 @@ function sobreDataCard(data, card) {
     const phone = criarElemento()
     const website = criarElemento()
 
-    apagarElementoFilho(sobreCard)
+    apagarElementos(sobreCard)
 
     id.textContent = `Id: ${data.id}`
     nome.textContent = `Name: ${data.name}`
@@ -65,6 +71,8 @@ function companyDataCard(data, card) {
     const catchPhrase = criarElemento()
     const bs = criarElemento()
 
+    apagarElementos(companyCard)
+
     name.textContent = `Name: ${data.company.name}`
     catchPhrase.textContent = `CatchPhrase: ${data.company.catchPhrase}`
     bs.textContent = `Bs: ${data.company.bs}`
@@ -83,6 +91,8 @@ function addressDataCard(data, card) {
     const geo = criarElemento()
     const lat = criarElemento()
     const lng = criarElemento()
+
+    apagarElementos(addressCard)
 
     street.textContent = `Street: ${data.address.street}`
     suite.textContent = `Suite: ${data.address.suite}`
@@ -109,9 +119,5 @@ function nameDataCard(data, card) {
     card.appendChild(name)
     
 }
-
-
-
-
 
 export default pegarDados
