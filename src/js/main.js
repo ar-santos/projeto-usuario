@@ -23,6 +23,7 @@ textoDoInput.addEventListener('keyup', (e)=> {
 
 function apagarCard() {
     utils.ocultarCard()
+    utils.exibirForm()
 }
 
 closeIcon.addEventListener('click', apagarCard, false)

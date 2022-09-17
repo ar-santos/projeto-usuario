@@ -10,9 +10,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
+    display: flex;
     height: 80vh;
     /* border: 1px solid red; */
     display: flex;
@@ -21,6 +25,11 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     margin: 0 auto;
     justify-content: center;
+}
+
+.div-esconder{
+    display: block;
+    transform: translate(0%,40%);
 }
 
 .app {
@@ -35,12 +44,13 @@ body {
     align-content: center;
 }
 
-.title{
+.titulo{
     position: relative;
     gap: 40px;
     text-align: center;
-    bottom: 110%;
-    padding: 20px;
+    bottom: 40px;
+    font-size: 28px;
+    right: 21%;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -50,9 +60,12 @@ body {
 }
 
 .input-search {
-   width: 100%;
+   display: flex;
+   flex-direction: center; 
+   width: 300%;
    height:30px;
-   bottom: 110%;
+   margin-top: 10px;
+   right: 98%;
    background: #fff;
    color: black;
    border-radius: 10px;
@@ -80,8 +93,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     position: relative;
     float:right;
     color: rgba(0, 0, 255, 0.596);
-    margin-right: 10px;
-    bottom: 160%;
+    bottom: 25px;
+    left: 95%;
     cursor: pointer;
 }
 
@@ -92,7 +105,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .button-search {
-    width: 23%;
+    width: 100%;
     height: 35px;
     align-content: center;
     background:none;
@@ -136,23 +149,23 @@ section .image-container img{
 
 .container-card{
     width: 400px;
-    height: 400px;
+    height: 450px;
     position: absolute;
     background: rgba(255, 255, 255, 0.562);
-    border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 25px 25px;
     box-shadow: 0px 1px 10px 1px #000;
     align-content: center;
-    top: 78%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,15%);
     display: none;
-    animation: go-back 1s;
+    animation-name: animition;
+    animation-duration: 1s;
+    animation-direction: normal;
 }
 
-@keyframes go-back {
+@keyframes animition {
     from {
-        transform: translateX(-150px);
-    }
+        transform: translate(-200px);
+      }
 }
 
 .overlay{
@@ -160,14 +173,14 @@ section .image-container img{
     height: 28%;
     width: 100%;
     background:rgba(0, 0, 255, 0.596);
-    border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 15px 15px;
 }
 
 .container-card .card-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    position: relative;
 }
 
 .container-card .h1-profiss{
@@ -290,32 +303,27 @@ section .image-container img{
     border-radius: 8px;
     position: fixed;
     margin-top: 50px;
-    margin-left: -235px;
+    margin-left: -255px;
     color: #333;
     animation: go-back 1s;
 }
 
-/* @keyframes go-back {
+@keyframes go-back {
     from {
         transform: translateX(-20px);
     }
-} */
+}
 
 .close{
     position: relative;
 }
 
-.linha{
-    width: 100%;
-    border-bottom: 2px solid #000000;
-    position: relative;
-    cursor: pointer;
-}
-
 /* class para exibir carde forma antiga */
-.ocultarCard{
-    position: relative;
+.close{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     cursor: pointer;
-    bottom: -60%;
-    float:right;
+    left: 178px;
+    top: 5px;
 }

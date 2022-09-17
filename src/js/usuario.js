@@ -7,7 +7,8 @@ function pegarUsuario() {
    for (let usuario of dados) {
         if(usuario.id == valorPesquisado){
             console.log(usuario)      
-            utils.exibirCard()             
+            utils.exibirCard()
+            utils.ocultarForm()       
         }
     }    
 }
