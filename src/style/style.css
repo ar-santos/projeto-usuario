@@ -30,6 +30,9 @@ body {
 .div-esconder{
     display: block;
     transform: translate(0%,40%);
+    animation-name: go-back;
+    animation-duration: 1s;
+    animation-direction: normal;
 }
 
 .app {
