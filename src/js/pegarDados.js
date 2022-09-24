@@ -3,7 +3,15 @@ let sobreCard = document.getElementById("sobre-id")
 let companyCard = document.getElementById("company-id")
 let nameCard = document.getElementById("name-usuario")
 import dados from '../data/index.js'
+import getUsers from './request.js'
 // import utils from './exibirEsconderCard.js'
+
+const getUserData = async(f) => {
+    let data = await f;
+    console.log(data)
+}
+
+getUserData(getUsers('https:jsonplaceholder.typicode.com/users/1'))
 
 function pegarDados() {    
     let resultadoPesquisado = document.getElementById("id-pesquisa").value 
