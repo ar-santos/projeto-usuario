@@ -1,25 +1,11 @@
 let btn = document.getElementById("id-search") // Trocar variavel btn por pesquisarBtn
 let button = document.getElementById("primeiro-button") // Trocar nome do icone lupa para pesquisaUsuarioIcon 
 let textoDoInput = document.getElementById("id-pesquisa")
-import pegarUsuario from './usuario.js'
 import utils from './exibirEsconderCard.js'
-import getUsers from './request.js'
 import getUserData from './pegarDados.js'
-let card = document.getElementById("id-card") 
 let closeIcon = document.getElementById("ocultarCard") 
 
-
-// let url = 'https:jsonplaceholder.typicode.com/users'
-
-// (async () => {
-//     let data = await getUsers(url);
-//     console.log(data)
-
-
-// })
-
-function pesquisarUsuario() { 
-    pegarUsuario()
+function pesquisarUsuario() {     
     getUserData()
     textoDoInput.value = '' 
 }
