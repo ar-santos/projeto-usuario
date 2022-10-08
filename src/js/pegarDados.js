@@ -9,21 +9,23 @@ import getUsers from './request.js'
 const getUserData = async(f) => {
     let data = await f;
     console.log(data)
-}
 
-getUserData(getUsers('https:jsonplaceholder.typicode.com/users/1'))
-
-function pegarDados() {    
     let resultadoPesquisado = document.getElementById("id-pesquisa").value 
-    for (let usuario of dados) {
+    for (let usuario of data) {
         if(usuario.id == resultadoPesquisado){
             sobreDataCard(usuario, sobreCard)        
             companyDataCard(usuario, companyCard)        
             addressDataCard(usuario, addressCard)        
             nameDataCard(usuario, nameCard)        
         }
-    }   
+    } 
 }
+
+getUserData(getUsers('https:jsonplaceholder.typicode.com/users/1'))
+
+// function pegarDados() {    
+     
+// }
 
 function criarElemento() {
    const newElement = document.createElement('h4') 
@@ -128,4 +130,4 @@ function nameDataCard(data, card) {
     
 }
 
-export default pegarDados
+export default getUserData
