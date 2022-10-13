@@ -1,6 +1,7 @@
 let card = document.getElementById("id-card") 
 let form = document.getElementById("esconder-form")
 let closeIcon = document.getElementById("ocultarCard") 
+let campoObrigatorio= document.getElementById("campo-obrigatorio") 
 
 function exibirCard() {
    if (card.style.display == 'block') {
@@ -38,11 +39,29 @@ function exibirForm() {
    } 
 }
 
+function campo() {
+   if (campoObrigatorio.style.display == 'none') {
+      campoObrigatorio.style.display = 'block';
+   } else { 
+      campoObrigatorio.style.display = 'block'  
+   } 
+}
+
+function OcultarCampo() {
+   if (campoObrigatorio.style.display == 'block') {
+      campoObrigatorio.style.display = 'none';
+   } else { 
+      campoObrigatorio.style.display = 'none'  
+   } 
+}
+
 const utils =  {
    ocultarCard,
    exibirCard,
    ocultarForm,
    exibirForm,
+   campo,
+   OcultarCampo,
 }
 
 export default utils 

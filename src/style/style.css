@@ -87,6 +87,25 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
+.campo-obrigatorio{
+    background: rgba(255, 255, 255, 0.562);
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0px 1px 10px 1px #000;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 50px;
+    animation-name: animimacao;
+    animation-duration: 1s;
+    animation-direction: normal;
+    display: none
+}
+
+
+@keyframes animimacao {
+    from {
+        transform: translate(50px);
+      }
+}
 
 .material-symbols-outlined.md-36 {
     font-size: 23px;
