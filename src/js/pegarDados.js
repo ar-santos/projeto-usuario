@@ -8,11 +8,12 @@ import helpers from './helpers.js'
 
 import getUsers from './request.js'
 
-const getUserData = async () => {
+const getUserData = async () => {    
 
-    let resultadoPesquisado = document.getElementById("id-pesquisa").value 
-    let usuario = await getUsers(`https:jsonplaceholder.typicode.com/users/${resultadoPesquisado}`);
-   
+    try {
+        let resultadoPesquisado = document.getElementById("id-pesquisa").value 
+        let usuario = await getUsers(`https:jsonplaceholder.typicode.com/users/${resultadoPesquisado}`);
+
         if(usuario.id == resultadoPesquisado){
             helpers.sobreDataCard(usuario, sobreCard)        
             helpers.companyDataCard(usuario, companyCard)        
@@ -25,6 +26,12 @@ const getUserData = async () => {
         }else{
             utils.campo()
         }        
+        
+    } catch (error) {
+        console.log(error)
+        
+    }   
+       
 }
 
 // TRATAR O ERRO DA REQUISIÇÃO QUANDO FOR PESQUISADO UM uSUÁRIO NÃO EXISTENTE OU FOR FEITA UMA PESQUISA EM BRANCO
