@@ -2,6 +2,9 @@ let card = document.getElementById("id-card")
 let form = document.getElementById("esconder-form")
 let closeIcon = document.getElementById("ocultarCard") 
 let campoObrigatorio= document.getElementById("campo-obrigatorio") 
+let addressId = document.getElementById("address-id") 
+let sobreId = document.getElementById("sobre-id") 
+let companyId = document.getElementById("company-id") 
 
 function exibirCard() {
    if (card.style.display == 'block') {
@@ -55,6 +58,42 @@ function OcultarCampo() {
    } 
 }
 
+function exibirAddress() {
+   if (addressId.style.display == 'block') {
+      addressId.style.display = 'block';
+      sobreId.style.display = 'none';
+      companyId.style.display = 'none';
+   }else { 
+      addressId.style.display = 'block'  
+      sobreId.style.display = 'none';
+      companyId.style.display = 'none';
+   } 
+}
+
+function exibirSobre() {
+   if (sobreId.style.display == 'block') {
+      sobreId.style.display = 'block';
+      addressId.style.display = 'none';
+      companyId.style.display = 'none';
+   }else { 
+      sobreId.style.display = 'block'  
+      addressId.style.display = 'none';
+      companyId.style.display = 'none';
+   } 
+}
+
+function exibirCompany() {
+   if (companyId.style.display == 'block') {
+      companyId.style.display = 'block';
+      sobreId.style.display = 'none';
+      addressId.style.display = 'none';
+   }else { 
+      companyId.style.display = 'block'  
+      sobreId.style.display = 'none';
+      addressId.style.display = 'none';
+   } 
+}
+
 const utils =  {
    ocultarCard,
    exibirCard,
@@ -62,6 +101,9 @@ const utils =  {
    exibirForm,
    campo,
    OcultarCampo,
+   exibirAddress,
+   exibirSobre,
+   exibirCompany,
 }
 
 export default utils 

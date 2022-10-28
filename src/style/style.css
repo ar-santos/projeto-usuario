@@ -252,40 +252,15 @@ section .image-container img{
     position: fixed;
 }
 
-.address:focus {
-    background: #6b7280;
-    color: #fff;
+.sobre-class {
+    display: block;
+    
 }
-.sobre-button:focus {
-   background: #6b7280;
-   color: #fff;
-}
-
-.company:focus {
-    color: #fff;
-    background: #6b7280;
-}
-
-.inform-sobre {
+.address-class{
     display: none;
 }
-.inform-address {
+.company-class{
     display: none;
-}
-.inform-company {
-    display: none;
-}
-
-.sobre-button:focus + .inform-sobre {
-    display: block;
-}
-
-.address:focus + .inform-address {
-    display: block;
-}
-
-.company:focus + .inform-company {
-    display: block;
 }
 
 .address-card{
@@ -297,7 +272,7 @@ section .image-container img{
     color: #374151;
     border-radius: 5%;
 }
-.inform-address {
+.address-class{
     width: 90%;
     position: relative;
     border-radius: 8px;
@@ -309,7 +284,7 @@ section .image-container img{
 }
 
 
-.inform-sobre {
+.sobre-class {
     width: 90%;
     position: relative;
     border-radius: 8px;
@@ -319,7 +294,7 @@ section .image-container img{
     color: #333;
     animation: go-back 1s;
 }
-.inform-company {
+.company-class  {
     width: 90%;
     position: relative;
     border-radius: 8px;

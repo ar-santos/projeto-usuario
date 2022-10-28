@@ -1,6 +1,9 @@
-let btn = document.getElementById("id-search") // Trocar variavel btn por pesquisarBtn
-let button = document.getElementById("primeiro-button") // Trocar nome do icone lupa para pesquisaUsuarioIcon 
+let pesquisarBtn = document.getElementById("id-search")
+let button = document.getElementById("pesquisaUsuarioIcon") 
 let textoDoInput = document.getElementById("id-pesquisa")
+let addressId = document.getElementById("address") 
+let sobreButton = document.getElementById("sobre-button") 
+let companyId = document.getElementById("company") 
 import utils from './exibirEsconderCard.js'
 import getUserData from './pegarDados.js'
 let closeIcon = document.getElementById("ocultarCard") 
@@ -10,7 +13,9 @@ function pesquisarUsuario() {
     textoDoInput.value = '' 
 }
 
-btn.addEventListener('click', pesquisarUsuario, false)
+
+
+pesquisarBtn.addEventListener('click', pesquisarUsuario, false)
 button.addEventListener('click', pesquisarUsuario, false)
 
 textoDoInput.addEventListener('keyup', (e)=> {
@@ -24,6 +29,25 @@ function apagarCard() {
 
 closeIcon.addEventListener('click', apagarCard, false)
 
+
+
+function exibirConteudo() {
+    utils.exibirAddress()
+}
+
+addressId.addEventListener('click', exibirConteudo, false)
+
+function exibirConteudoSobre() {
+    utils.exibirSobre()
+}
+
+sobreButton.addEventListener('click', exibirConteudoSobre, false)
+
+function exibirConteudoCompany() {
+    utils.exibirCompany()
+}
+
+companyId.addEventListener('click', exibirConteudoCompany, false)
 
 
 
