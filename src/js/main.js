@@ -48,8 +48,3 @@ function exibirConteudoCompany() {
 }
 
 companyId.addEventListener('click', exibirConteudoCompany, false)
-
-
-
-
-

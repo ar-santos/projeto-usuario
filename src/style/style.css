@@ -241,10 +241,6 @@ section .image-container img{
     cursor: pointer;
 }
 
-.seção-inform button:hover{
-    background:rgba(55, 0, 255, 0.89);
-}
-
 .seção-inform {
     display: flex;
     justify-content: center;
@@ -253,9 +249,13 @@ section .image-container img{
 }
 
 .sobre-class {
-    display: block;
-    
+    display: block;    
 }
+
+/* .sobre-button {
+    background: blue;
+}    */
+
 .address-class{
     display: none;
 }
