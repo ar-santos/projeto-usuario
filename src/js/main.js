@@ -13,8 +13,6 @@ function pesquisarUsuario() {
     textoDoInput.value = '' 
 }
 
-
-
 pesquisarBtn.addEventListener('click', pesquisarUsuario, false)
 button.addEventListener('click', pesquisarUsuario, false)
 
@@ -28,8 +26,6 @@ function apagarCard() {
 }
 
 closeIcon.addEventListener('click', apagarCard, false)
-
-
 
 function exibirConteudo() {
     utils.exibirAddress()

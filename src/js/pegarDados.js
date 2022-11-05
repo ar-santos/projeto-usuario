@@ -34,10 +34,4 @@ const getUserData = async () => {
        
 }
 
-// TRATAR O ERRO DA REQUISIÇÃO QUANDO FOR PESQUISADO UM uSUÁRIO NÃO EXISTENTE OU FOR FEITA UMA PESQUISA EM BRANCO
-// usuário não identificado ou não existe!
-// Favor digiar um código de usuário!
-
-
-
 export default getUserData

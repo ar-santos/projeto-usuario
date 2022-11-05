@@ -1,4 +1,3 @@
-//https://jsonplaceholder.typicode.com/users/1
 
 const getUsers = async (url) =>{
     try {
