@@ -2,12 +2,12 @@
 const getUsers = async (url) =>{
     try {
         const response = await fetch(url);
-        return response.json(); 
-        
+        return response.json();
+
     } catch (error) {
-        return error
+        console.log(error)
     }
-      
+
 }
 
 export default getUsers;
