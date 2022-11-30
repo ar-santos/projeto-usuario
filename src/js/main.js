@@ -1,23 +1,23 @@
 let pesquisarBtn = document.getElementById("id-search")
-let button = document.getElementById("pesquisaUsuarioIcon") 
+let button = document.getElementById("pesquisaUsuarioIcon")
 let textoDoInput = document.getElementById("id-pesquisa")
-let addressId = document.getElementById("address") 
-let sobreButton = document.getElementById("sobre-button") 
-let companyId = document.getElementById("company") 
+let addressId = document.getElementById("address")
+let sobreButton = document.getElementById("sobre-button")
+let companyId = document.getElementById("company")
 import utils from './exibirEsconderCard.js'
 import getUserData from './pegarDados.js'
-let closeIcon = document.getElementById("ocultarCard") 
+let closeIcon = document.getElementById("ocultarCard")
 
-function pesquisarUsuario() {     
+function pesquisarUsuario() {
     getUserData()
-    textoDoInput.value = '' 
+    textoDoInput.value = ''
 }
 
 pesquisarBtn.addEventListener('click', pesquisarUsuario, false)
 button.addEventListener('click', pesquisarUsuario, false)
 
 textoDoInput.addEventListener('keyup', (e)=> {
-    (e.key === 'Enter' ? pesquisarUsuario(): null) 
+    (e.key === 'Enter' ? pesquisarUsuario() : null)
 })
 
 function apagarCard() {

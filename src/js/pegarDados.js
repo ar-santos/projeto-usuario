@@ -12,7 +12,8 @@ const getUserData = async () => {
 
     try {
         let resultadoPesquisado = document.getElementById("id-pesquisa").value
-        let usuario = await getUsers(`https:jsonplaceholder.typicode.com/users/${resultadoPesquisado}`);
+        let userData = await getUsers(`https:jsonplaceholder.typicode.com/users/${resultadoPesquisado}`);
+        let usuario = userData
         console.log(usuario)
         console.log(resultadoPesquisado)
         if(usuario.id == resultadoPesquisado){
